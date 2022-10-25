@@ -15,6 +15,7 @@ Getroffene Annahmen
 ---------------------
 S03
 - Jedem WhiteKnightTwo ist genau einem SpaceShipTwo zugeordnet und umgekehrt
+- Das SpaceShipTwo wird als Teil von WhiteKnightTwo verstanden und entsprechend via Aggregation modelliert
 - SpaceShipTwo hat nur Teile via Aggregation modelliert, da eine physische Inklusion/Komposition nur modelliert werden soll, wenn explizit erwähnt.
 - Jeder Wing hat nur ein Ruder, ein Elevon und einen Stabilisator
 - Jedem SpacePort ist nur ein Tower zugeordnet und umgekehrt
