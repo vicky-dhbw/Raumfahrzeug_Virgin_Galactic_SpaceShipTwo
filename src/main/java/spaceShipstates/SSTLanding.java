@@ -1,4 +1,10 @@
 package spaceShipstates;
 
-public class SSTLanding {
+import spaceShips.SpaceShipTwo;
+
+public class SSTLanding extends SSTState{
+
+    public SSTLanding(SpaceShipTwo spaceShipTwo){
+        this.spaceShipTwo=spaceShipTwo;
+    }
 }

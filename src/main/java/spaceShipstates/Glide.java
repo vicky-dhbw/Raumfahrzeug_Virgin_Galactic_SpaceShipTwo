@@ -1,4 +1,10 @@
 package spaceShipstates;
 
-public class Glide {
+import spaceShips.SpaceShipTwo;
+
+public class Glide extends SSTState{
+
+    public Glide(SpaceShipTwo spaceShipTwo){
+        this.spaceShipTwo=spaceShipTwo;
+    }
 }

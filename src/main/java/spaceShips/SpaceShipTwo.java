@@ -4,6 +4,10 @@ import persons.Passenger;
 import persons.Pilot;
 import spaceShipsComponents.FlightPod;
 import spaceShipsComponents.Wing;
+import spaceShipstates.SSTState;
+
+import java.util.Arrays;
+import java.util.List;
 
 public class SpaceShipTwo {
 
@@ -12,13 +16,16 @@ public class SpaceShipTwo {
 
     private final FlightPod flightPod=new FlightPod();
 
-    private final Passenger[] passengers;
-    private final Pilot[] pilots;
+    private final List<Passenger> passengers;
+    private final List<Pilot> pilots;
+
+    private SSTState currentState;
 
     public SpaceShipTwo(){
-        passengers=new Passenger[6];
-        pilots=new Pilot[2];
+        passengers= Arrays.asList(new Passenger[6]);
+        pilots=Arrays.asList(new Pilot[2]);
     }
+
 
     public Wing getRightWing() {
         return rightWing;
@@ -32,11 +39,12 @@ public class SpaceShipTwo {
         return flightPod;
     }
 
-    public Passenger[] getPassengers() {
+    public List<Passenger> getPassengers() {
         return passengers;
     }
 
-    public Pilot[] getPilots() {
+    public List<Pilot> getPilots() {
         return pilots;
     }
+
 }

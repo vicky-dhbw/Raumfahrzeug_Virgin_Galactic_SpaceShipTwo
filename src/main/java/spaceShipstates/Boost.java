@@ -1,4 +1,10 @@
 package spaceShipstates;
 
-public class Boost {
+import spaceShips.SpaceShipTwo;
+
+public class Boost extends SSTState{
+
+    public Boost(SpaceShipTwo spaceShipTwo){
+        this.spaceShipTwo=spaceShipTwo;
+    }
 }

@@ -1,4 +1,10 @@
 package spaceShipstates;
 
-public class ReEntry {
+import spaceShips.SpaceShipTwo;
+
+public class ReEntry extends SSTState{
+
+    public ReEntry(SpaceShipTwo spaceShipTwo){
+        this.spaceShipTwo=spaceShipTwo;
+    }
 }
