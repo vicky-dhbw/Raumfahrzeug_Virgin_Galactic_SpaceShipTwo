@@ -14,6 +14,11 @@ public class Application {
         whiteKnightTwo.releaseSpaceShip();
 
         spaceShipTwo.boost();
+        spaceShipTwo.apogee();
+        whiteKnightTwo.landWKT();
+        spaceShipTwo.reEnter();
+        spaceShipTwo.glide();
+        spaceShipTwo.landSST();
 
     }
 }

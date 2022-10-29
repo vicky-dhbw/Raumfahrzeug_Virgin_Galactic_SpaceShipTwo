@@ -25,7 +25,7 @@ public abstract class SSTState {
         return false;
     }
 
-    public boolean land(){
+    public boolean landSST(){
         System.out.println("space ship should glide first....");
         return false;
     }

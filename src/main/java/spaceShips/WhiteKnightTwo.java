@@ -33,13 +33,14 @@ public class WhiteKnightTwo {
     }
 
     public void takeOff(){
-        setCurrentState(takeOff);
+        currentState=takeOff;
         takeOff.takeOff();
     }
 
     public void releaseSpaceShip(){
         if(currentState == takeOff){
-            currentState.releaseSpaceShipTwo();
+            currentState=release;
+            release.releaseSpaceShip();
         }
         else{
             System.out.println("cannot release space ship two, white knight must take off first !!!");
@@ -48,7 +49,8 @@ public class WhiteKnightTwo {
 
     public void landWKT(){
         if(currentState==release){
-            currentState.land();
+            currentState=wktLanding;
+            wktLanding.land();
         }
         else{
             System.out.println("white knight must first release space ship two.....");

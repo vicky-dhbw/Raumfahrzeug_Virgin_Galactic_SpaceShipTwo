@@ -16,7 +16,7 @@ public abstract class WKTState {
         return false;
     }
 
-    public boolean land(){
+    public boolean landWKT(){
         System.out.println("white knight should release space ship two first");
         return false;
     }

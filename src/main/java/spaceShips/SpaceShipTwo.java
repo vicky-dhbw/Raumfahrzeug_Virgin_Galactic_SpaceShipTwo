@@ -49,6 +49,7 @@ public class SpaceShipTwo {
     public void boost(){
         if(whiteKnightTwo.getCurrentState()== getWhiteKnightTwo().getRelease()){
             currentState=boost;
+            boost.boost();
         }
         else{
             System.out.println("white knight must first release space ship two !!!!");
@@ -57,7 +58,8 @@ public class SpaceShipTwo {
 
     public void apogee(){
         if(currentState==boost){
-            currentState.apogee();
+            currentState=apogee;
+            apogee.apogee();
         }
         else{
             System.out.println("space ship two must boost first !!!");
@@ -66,7 +68,8 @@ public class SpaceShipTwo {
 
     public void reEnter(){
         if(currentState==apogee){
-            currentState.reEntry();
+            currentState=reEntry;
+            reEntry.reEntry();
         }
         else {
             System.out.println("space ship two must reach space first and do apogee");
@@ -75,7 +78,8 @@ public class SpaceShipTwo {
 
     public void glide(){
         if(currentState==reEntry){
-            currentState.glide();
+            currentState=glide;
+            glide.glide();
         }
         else{
             System.out.println("space ship must first start reentering earth's atmosphere");
@@ -84,7 +88,8 @@ public class SpaceShipTwo {
 
     public void landSST(){
         if(currentState==glide){
-            currentState.land();
+            currentState=sstLanding;
+            sstLanding.landSST();
         }
         else{
             System.out.println("space ship two must first glide to the runway.....");
