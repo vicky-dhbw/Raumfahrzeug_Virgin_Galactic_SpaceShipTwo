@@ -8,7 +8,8 @@ public class Boost extends SSTState{
         this.spaceShipTwo=spaceShipTwo;
     }
 
-    public void boost(){
+    public boolean boost(){
         System.out.println("Space Ship two climbs vertically");
+        return true;
     }
 }

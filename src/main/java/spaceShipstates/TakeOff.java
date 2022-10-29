@@ -8,7 +8,8 @@ public class TakeOff extends WKTState{
         this.whiteKnightTwo=whiteKnightTwo;
     }
 
-    public void takeOff(){
+    public boolean takeOff(){
         System.out.println("White Knight Two taking off.....");
+        return true;
     }
 }

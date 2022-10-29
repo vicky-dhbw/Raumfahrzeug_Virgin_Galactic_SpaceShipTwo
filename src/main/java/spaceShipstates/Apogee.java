@@ -8,5 +8,9 @@ public class Apogee extends SSTState{
         this.spaceShipTwo=spaceShipTwo;
     }
 
-
+    public boolean apogee(){
+        System.out.println("spaces ship reaches space.... ");
+        System.out.println("pilot experiences micro-gravity");
+        return true;
+    }
 }

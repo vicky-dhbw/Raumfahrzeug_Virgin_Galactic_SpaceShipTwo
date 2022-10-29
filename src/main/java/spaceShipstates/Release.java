@@ -8,8 +8,9 @@ public class Release extends WKTState{
         this.whiteKnightTwo=whiteKnightTwo;
     }
 
-    public void releaseSpaceShip(){
+    public boolean releaseSpaceShip(){
         System.out.println("releasing space ship");
         whiteKnightTwo.setSpaceShipTwo(null);
+        return true;
     }
 }
