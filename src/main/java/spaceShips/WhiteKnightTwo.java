@@ -32,6 +32,15 @@ public class WhiteKnightTwo {
         this.spaceShipTwo = spaceShipTwo;
     }
 
+    public void takeOff(){
+        setCurrentState(takeOff);
+        takeOff.takeOff();
+    }
+
+    public void releaseSpaceShip(){
+        setCurrentState(release);
+        release.releaseSpaceShip();
+    }
     public TakeOff getTakeOff() {
         return takeOff;
     }
@@ -42,5 +51,9 @@ public class WhiteKnightTwo {
 
     public WKTLanding getWktLanding() {
         return wktLanding;
+    }
+
+    public WKTState getCurrentState() {
+        return currentState;
     }
 }

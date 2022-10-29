@@ -41,6 +41,11 @@ public class SpaceShipTwo {
     public void setCurrentState(SSTState sstState){
         this.currentState=sstState;
     }
+
+    public void boost(){
+        setCurrentState(boost);
+        boost.boost();
+    }
     public Wing getRightWing() {
         return rightWing;
     }
