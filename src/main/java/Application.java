@@ -11,7 +11,7 @@ public class Application {
         spaceShipTwo.setWhiteKnightTwo(whiteKnightTwo);
 
         whiteKnightTwo.takeOff();
-        whiteKnightTwo.releaseSpaceShip();
+        whiteKnightTwo.releaseSpaceShipTwo();
 
         spaceShipTwo.boost();
         spaceShipTwo.apogee();

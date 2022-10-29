@@ -37,23 +37,25 @@ public class WhiteKnightTwo {
         takeOff.takeOff();
     }
 
-    public void releaseSpaceShip(){
+    public boolean releaseSpaceShipTwo(){
         if(currentState == takeOff){
             currentState=release;
-            release.releaseSpaceShip();
+            return currentState.releaseSpaceShipTwo();
         }
         else{
             System.out.println("cannot release space ship two, white knight must take off first !!!");
+            return false;
         }
     }
 
-    public void landWKT(){
+    public boolean landWKT(){
         if(currentState==release){
             currentState=wktLanding;
-            wktLanding.land();
+            return currentState.landWKT();
         }
         else{
             System.out.println("white knight must first release space ship two.....");
+            return false;
         }
     }
     public TakeOff getTakeOff() {

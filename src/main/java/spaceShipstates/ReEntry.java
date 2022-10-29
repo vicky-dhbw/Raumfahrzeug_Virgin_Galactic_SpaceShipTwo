@@ -8,7 +8,7 @@ public class ReEntry extends SSTState{
         this.spaceShipTwo=spaceShipTwo;
     }
 
-    public boolean reEntry(){
+    public boolean reEnter(){
         System.out.println("the journey back home begins.....");
         System.out.println("space ship reentering earth's atmosphere.......");
         return true;

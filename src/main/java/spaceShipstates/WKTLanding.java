@@ -8,7 +8,7 @@ public class WKTLanding extends WKTState{
         this.whiteKnightTwo=whiteKnightTwo;
     }
 
-    public boolean land() {
+    public boolean landWKT() {
         System.out.println("white knight two landing....");
         return true;
     }

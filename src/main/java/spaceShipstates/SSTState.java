@@ -15,7 +15,7 @@ public abstract class SSTState {
         return false;
     }
 
-    public boolean reEntry(){
+    public boolean reEnter(){
         System.out.println("space ship should apogee first....");
         return false;
     }
