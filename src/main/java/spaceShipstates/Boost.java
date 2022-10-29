@@ -9,7 +9,10 @@ public class Boost extends SSTState{
     }
 
     public boolean boost(){
-        System.out.println("Space Ship two climbs vertically");
+        System.out.println("3 seconds since VSS has been released...........");
+        System.out.println("VSS BOOSTS -------- ");
+        System.out.println("VSS climbs vertically up towards space.....");
+        System.out.println();
         return true;
     }
 }

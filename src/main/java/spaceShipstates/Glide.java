@@ -9,8 +9,8 @@ public class Glide extends SSTState{
     }
 
     public boolean glide(){
-        System.out.println("booms lower");
-        System.out.println("space ship two glides to the runway");
+        System.out.println("BOOMS lower");
+        System.out.println("VSS glides to the runway...........");
         return true;
     }
 }

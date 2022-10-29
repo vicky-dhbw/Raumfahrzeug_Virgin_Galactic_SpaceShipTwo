@@ -9,8 +9,9 @@ public class Apogee extends SSTState{
     }
 
     public boolean apogee(){
-        System.out.println("spaces ship reaches space.... ");
-        System.out.println("pilot experiences micro-gravity");
+        System.out.println("VSS reaches space.... HEIGHT about: 328000 and 361000 feet ---");
+        System.out.println("Pilot and Passengers experience micro-gravity........");
+        System.out.println();
         return true;
     }
 }

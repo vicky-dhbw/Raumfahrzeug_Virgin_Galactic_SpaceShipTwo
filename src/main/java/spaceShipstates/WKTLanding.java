@@ -9,7 +9,8 @@ public class WKTLanding extends WKTState{
     }
 
     public boolean landWKT() {
-        System.out.println("white knight two landing....");
+        System.out.println("WHITE KNIGHT TWO preparing to land....");
+        System.out.println();
         return true;
     }
 }

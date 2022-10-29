@@ -9,7 +9,8 @@ public class SSTLanding extends SSTState{
     }
 
     public boolean landSST(){
-        System.out.println("space ship two glides to a landing");
+        System.out.println("VSS glides to a landing ............");
+        System.out.println("VSS lands successfully ------");
         return true;
     }
 }

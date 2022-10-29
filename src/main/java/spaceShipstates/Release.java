@@ -9,7 +9,9 @@ public class Release extends WKTState{
     }
 
     public boolean releaseSpaceShipTwo(){
-        System.out.println("releasing space ship");
+        System.out.println("WHITE KNIGHT TWO with VSS reaches 50 000 feet.....");
+        System.out.println("releasing / decoupling VSS ---------- ");
+        System.out.println();
         whiteKnightTwo.setSpaceShipTwo(null);
         return true;
     }

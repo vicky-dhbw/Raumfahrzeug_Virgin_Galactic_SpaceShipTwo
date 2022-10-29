@@ -30,6 +30,7 @@ public class WhiteKnightTwo {
 
     public void setSpaceShipTwo(SpaceShipTwo spaceShipTwo) {
         this.spaceShipTwo = spaceShipTwo;
+        System.out.println();
     }
 
     public void takeOff(){

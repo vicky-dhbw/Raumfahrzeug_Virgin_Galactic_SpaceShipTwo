@@ -9,7 +9,9 @@ public class TakeOff extends WKTState{
     }
 
     public boolean takeOff(){
-        System.out.println("White Knight Two taking off.....");
+        System.out.println("WHITE KNIGHT TWO announcing for TAKE OFF....");
+        System.out.println("WHITE KNIGHT TWO taking off.....");
+        System.out.println();
         return true;
     }
 }
