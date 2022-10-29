@@ -6,7 +6,6 @@ import spaceShipstates.WKTLanding;
 import spaceShipstates.WKTState;
 
 public class WhiteKnightTwo {
-
     private SpaceShipTwo spaceShipTwo;
     private final TakeOff takeOff;
     private final Release release;
@@ -19,6 +18,7 @@ public class WhiteKnightTwo {
         release=new Release(this);
         wktLanding=new WKTLanding(this);
     }
+
 
     public SpaceShipTwo getSpaceShipTwo() {
         return spaceShipTwo;
@@ -38,8 +38,21 @@ public class WhiteKnightTwo {
     }
 
     public void releaseSpaceShip(){
-        setCurrentState(release);
-        release.releaseSpaceShip();
+        if(currentState == takeOff){
+            currentState.releaseSpaceShipTwo();
+        }
+        else{
+            System.out.println("cannot release space ship two, white knight must take off first !!!");
+        }
+    }
+
+    public void landWKT(){
+        if(currentState==release){
+            currentState.land();
+        }
+        else{
+            System.out.println("white knight must first release space ship two.....");
+        }
     }
     public TakeOff getTakeOff() {
         return takeOff;

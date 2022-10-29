@@ -16,6 +16,8 @@ public class SpaceShipTwo {
 
     private final FlightPod flightPod=new FlightPod();
 
+    private WhiteKnightTwo whiteKnightTwo;
+
     private final List<Passenger> passengers;
     private final List<Pilot> pilots;
 
@@ -37,14 +39,56 @@ public class SpaceShipTwo {
         sstLanding=new SSTLanding(this);
     }
 
-
+    public void setWhiteKnightTwo(WhiteKnightTwo whiteKnightTwo){
+        this.whiteKnightTwo=whiteKnightTwo;
+    }
     public void setCurrentState(SSTState sstState){
         this.currentState=sstState;
     }
 
     public void boost(){
-        setCurrentState(boost);
-        boost.boost();
+        if(whiteKnightTwo.getCurrentState()== getWhiteKnightTwo().getRelease()){
+            currentState=boost;
+        }
+        else{
+            System.out.println("white knight must first release space ship two !!!!");
+        }
+    }
+
+    public void apogee(){
+        if(currentState==boost){
+            currentState.apogee();
+        }
+        else{
+            System.out.println("space ship two must boost first !!!");
+        }
+    }
+
+    public void reEnter(){
+        if(currentState==apogee){
+            currentState.reEntry();
+        }
+        else {
+            System.out.println("space ship two must reach space first and do apogee");
+        }
+    }
+
+    public void glide(){
+        if(currentState==reEntry){
+            currentState.glide();
+        }
+        else{
+            System.out.println("space ship must first start reentering earth's atmosphere");
+        }
+    }
+
+    public void landSST(){
+        if(currentState==glide){
+            currentState.land();
+        }
+        else{
+            System.out.println("space ship two must first glide to the runway.....");
+        }
     }
     public Wing getRightWing() {
         return rightWing;
@@ -88,5 +132,9 @@ public class SpaceShipTwo {
 
     public SSTState getCurrentState() {
         return currentState;
+    }
+
+    public WhiteKnightTwo getWhiteKnightTwo() {
+        return whiteKnightTwo;
     }
 }
