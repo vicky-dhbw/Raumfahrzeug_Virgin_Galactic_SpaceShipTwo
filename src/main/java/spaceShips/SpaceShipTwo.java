@@ -6,6 +6,7 @@ import spaceShipsComponents.FlightPod;
 import spaceShipsComponents.Wing;
 import spaceShipstates.*;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -30,13 +31,38 @@ public class SpaceShipTwo {
     private final SSTLanding sstLanding;
 
     public SpaceShipTwo(){
-        passengers= Arrays.asList(new Passenger[6]);
-        pilots=Arrays.asList(new Pilot[2]);
+        passengers= new ArrayList<>();
+        pilots=new ArrayList<>();
         apogee=new Apogee(this);
         boost=new Boost(this);
         reEntry=new ReEntry(this);
         glide=new Glide(this);
         sstLanding=new SSTLanding(this);
+
+
+        welcomePilots();
+        welcomingPassengersOnBoard();
+
+    }
+
+    public void welcomingPassengersOnBoard(){
+        System.out.println("VSS WELCOMING TOURISTS ON BOARD.....");
+        System.out.println();
+        for(int i=0;i<Configuration.INSTANCE.numberOfPassengers;i++){
+            Passenger passenger=new Passenger();
+            passengers.add(passenger);
+        }
+    }
+
+    public void welcomePilots(){
+        for(int i=0;i<Configuration.INSTANCE.numberOFPilots;i++){
+            Pilot pilot=new Pilot();
+            pilots.add(pilot);
+        }
+        System.out.println("------------------------------------");
+        System.out.println("Pilots boarding VSS....");
+        System.out.println();
+
     }
 
     public void setWhiteKnightTwo(WhiteKnightTwo whiteKnightTwo){

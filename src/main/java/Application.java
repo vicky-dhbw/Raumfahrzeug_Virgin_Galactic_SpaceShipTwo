@@ -7,6 +7,7 @@ public class Application {
         SpaceShipTwo spaceShipTwo=new SpaceShipTwo();
         WhiteKnightTwo whiteKnightTwo=new WhiteKnightTwo();
 
+
         whiteKnightTwo.setSpaceShipTwo(spaceShipTwo);
         spaceShipTwo.setWhiteKnightTwo(whiteKnightTwo);
 
