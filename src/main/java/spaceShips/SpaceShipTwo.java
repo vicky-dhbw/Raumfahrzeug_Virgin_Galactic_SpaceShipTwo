@@ -22,6 +22,7 @@ public class SpaceShipTwo {
     private final Passenger[] passengers;
     private final Pilot[] pilots;
 
+
     private SSTState currentState;
 
     private final Apogee apogee;
