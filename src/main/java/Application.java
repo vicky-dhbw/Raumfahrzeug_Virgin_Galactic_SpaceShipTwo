@@ -5,6 +5,7 @@ public class Application {
     public static void main(String[] args) {
 
 
+        // Message from S06
         // this application does not contain implementation of SpacePort / tank vehicle / Tower assigned to S05
         // Reason: S05 has been ex-matriculated
         // -------------------------------------------------------------------------------------------------------
@@ -16,6 +17,7 @@ public class Application {
 
 
         SpaceShipTwo spaceShipTwo=new SpaceShipTwo();
+        spaceShipTwo.getFlightPod().getHybridRocketSystem().getOxidizerTank().setFuelAmount(1000);
         WhiteKnightTwo whiteKnightTwo=new WhiteKnightTwo();
 
         whiteKnightTwo.setSpaceShipTwo(spaceShipTwo);

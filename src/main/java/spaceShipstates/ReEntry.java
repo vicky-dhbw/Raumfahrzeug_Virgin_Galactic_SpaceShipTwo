@@ -12,6 +12,9 @@ public class ReEntry extends SSTState{
         System.out.println("the journey back home begins.....");
         System.out.println("VSS preparing to reenter earth's atmosphere.......");
         System.out.println();
+        spaceShipTwo.getFlightPod().getHybridRocketSystem().getOxidizerTank().burnFuel(200);
+        System.out.println("current fuel amount in tank: "+spaceShipTwo.getFlightPod().getHybridRocketSystem().getOxidizerTank().getFuelAmount());
+        System.out.println();
         return true;
     }
 }
