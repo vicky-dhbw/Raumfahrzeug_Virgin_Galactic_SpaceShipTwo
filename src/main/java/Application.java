@@ -9,7 +9,7 @@ public class Application {
         // Reason: S05 has been ex-matriculated
         // -------------------------------------------------------------------------------------------------------
         // this application therefore only contains implementation of tasks assigned to S06
-        // following has been implemented:
+        // following have been implemented:
         // --> modelling of VSS and Mother ship  (all that is relevant for spaceship and mother ship
         // --> abstraction related to journey of the VSS and Mother ship  (all abstractions related to journey to the space)
         // --> wishing you a good journey to space :)

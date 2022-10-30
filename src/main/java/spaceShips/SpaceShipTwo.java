@@ -19,8 +19,8 @@ public class SpaceShipTwo {
 
     private WhiteKnightTwo whiteKnightTwo;
 
-    private final List<Passenger> passengers;
-    private final List<Pilot> pilots;
+    private final Passenger[] passengers;
+    private final Pilot[] pilots;
 
     private SSTState currentState;
 
@@ -31,8 +31,8 @@ public class SpaceShipTwo {
     private final SSTLanding sstLanding;
 
     public SpaceShipTwo(){
-        passengers= new ArrayList<>();
-        pilots=new ArrayList<>();
+        passengers= new Passenger[Configuration.INSTANCE.numberOfPassengers];
+        pilots=new Pilot[Configuration.INSTANCE.numberOFPilots];
         apogee=new Apogee(this);
         boost=new Boost(this);
         reEntry=new ReEntry(this);
@@ -49,15 +49,13 @@ public class SpaceShipTwo {
         System.out.println("VSS WELCOMING TOURISTS ON BOARD.....");
         System.out.println();
         for(int i=0;i<Configuration.INSTANCE.numberOfPassengers;i++){
-            Passenger passenger=new Passenger();
-            passengers.add(passenger);
+            passengers[i]=new Passenger();
         }
     }
 
     public void welcomePilots(){
         for(int i=0;i<Configuration.INSTANCE.numberOFPilots;i++){
-            Pilot pilot=new Pilot();
-            pilots.add(pilot);
+           pilots[i]=new Pilot();
         }
         System.out.println("------------------------------------");
         System.out.println("Pilots boarding VSS....");
@@ -138,11 +136,11 @@ public class SpaceShipTwo {
         return flightPod;
     }
 
-    public List<Passenger> getPassengers() {
+    public Passenger[] getPassengers() {
         return passengers;
     }
 
-    public List<Pilot> getPilots() {
+    public Pilot[] getPilots() {
         return pilots;
     }
 

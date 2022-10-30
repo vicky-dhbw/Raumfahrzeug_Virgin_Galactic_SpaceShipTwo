@@ -15,6 +15,7 @@ public class TestApplication {
 
         whiteKnightTwo.setSpaceShipTwo(spaceShipTwo);
         spaceShipTwo.setWhiteKnightTwo(whiteKnightTwo);
+        System.out.println("You are running the test application....");
 
     }
 
